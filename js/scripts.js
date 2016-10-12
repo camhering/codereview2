@@ -12,7 +12,7 @@ var yourSpot = function(beer, outfit, food, weather, travel) {
     return "Portland, OR"
   }
 
-  
+
 
 };
 
@@ -25,8 +25,8 @@ $(document).ready(function() {
     var travel = $("select#travel").val();
 
 
-    var yourspot = yourSpot(beer,outfit,food,weather,travel);
-    $("#yourspot").show();
+    var result = yourSpot(beer,outfit,food,weather,travel);
+    $("#result").show();
     $("#perfect").text(yourspot);
 
     event.preventDefault();
